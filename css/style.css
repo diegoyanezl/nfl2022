@@ -1,0 +1,368 @@
+:root {
+    --blue-color: rgb(19, 46, 138);
+    --teal-color: rgb(115, 239, 255);
+	--red-color: rgb(255, 71, 105);
+	--gray-color: rgb(222, 224, 228);
+	
+	--full-height: 480px;
+	--half-height: 240px;
+	--fourth-height: 120px;
+	--sixty-height: 288px;
+	--twenty-height: 96px;
+
+	--col-width: 84px;
+	--double-col-width: 180px;
+
+
+	--full-height2: 450px;
+	--half-height2: 225px;
+	--fourth-height2: 112.5px;
+	--sixty-height2: 270px;
+	--twenty-height2: 90px;
+
+	--col-width2: 86px;
+	--double-col-width2: 180px;
+}
+
+body,p,h1,h2,h3,h4,h5,h6 {font-family: 'Shrikhand', sans-serif; font-weight: 400;}
+body, html {
+    padding: 0;
+    margin: 0;
+    /* background-color: var(--blue-color); */
+}
+
+
+
+.bar {
+	width: 100%;
+	background-color: var(--blue-color);
+	height: 160px;
+	text-align: center;
+	z-index: 2;
+}
+
+.bar3 {
+	width: 100%;
+	background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 100%);
+	height: 90px;
+	z-index: 1;
+}
+.sticky {
+	width: 100%;
+	background-color: var(--blue-color);
+
+	position: sticky;
+	top: 0;
+	height: 110px;
+	margin-top: -135px;
+	text-align: center;
+}
+.headin{
+	text-align: center;
+	text-decoration: none;
+    color: var(--teal-color);
+	margin: 20px 0;
+	display: inline;
+	font-size: 100px;
+	line-height: 110px;
+	z-index: 3;
+}
+.h2 {
+    color: var(--red-color);
+}
+
+
+.ptable table{
+	margin: 30px auto;
+    border-collapse: collapse;
+	font-size: 40px;
+	font-weight: 400;
+}	
+.ptable{
+	margin: 0px 0% 20px 0%;
+}
+th, td {
+    padding: 10px;
+}
+.col{
+	background-color: var(--blue-color);
+	color: var(--red-color);
+}
+.wpos{
+	background-color: var(--teal-color);
+	text-align: center;
+}
+.wpos td{
+	color: var(--blue-color);
+}
+.wpos:hover{
+	/* background-color: var(--teal-color); */
+	cursor: default;
+}
+.wpos:hover td{
+	color: var(--red-color);
+}
+.name {
+    text-align: left;
+	font-weight: 400;
+}
+
+.predBlock {
+	margin: 80px auto;
+	display: block;
+	/* border:rgb(158, 0, 250) 5px solid; */
+	text-align: center;
+	height: var(--full-height);
+	
+}
+.roundBlock {
+	/* background-color: blue; */
+	width: var(--col-width);
+	height: 100%;
+	display: inline-block;
+	margin: 4px;
+	padding: 0;
+	vertical-align: top;
+}
+/* .divBlock {
+	background-color: blue;
+}
+.confBlock {
+	background-color: rgb(98, 135, 255);
+}
+.sbBlock {
+	background-color: rgb(142, 191, 255);
+} */
+.champBlock {
+	/* background-color: rgb(203, 238, 255); */
+	width: var(--double-col-width);
+}
+.nfc {background-color: var(--teal-color);}
+.afc {background-color: var(--red-color);}
+
+.teamBlock {
+	outline: white solid 3px;
+	width: 100%;
+	vertical-align: top;
+	background-size: cover;
+	background-position: center;
+}
+.divTeam {
+	height: 25%;
+	line-height: var(--fourth-height);
+}
+.confTeam {
+	height: 50%;
+	line-height: var(--half-height);
+}
+.sbTeam {
+	height: 100%;
+	line-height: var(--full-height);
+}
+.champTeam {
+	height: 60%;
+	line-height: var(--sixty-height);	
+	background-color: var(--blue-color);
+}
+.nameBlock {
+	height: 20%;
+}
+.ptsBlock {
+	height: 20%;
+}
+.nameBlock, .ptsBlock {
+	font-size: 30px;
+	line-height: var(--twenty-height);
+	vertical-align: middle;
+	background-color: var(--blue-color);
+	color: var(--teal-color);
+}
+.teamBlock p {
+	margin: 0;
+	font-size: 40px;
+}
+.champTeam p{
+	font-size: 60px;
+}
+.tGB {
+	background-image: url(GB.png);
+}
+.tKC {
+	background-image: url(KC.png);
+}
+
+.submit {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+input {
+	background-color: var(--red-color);
+	border-radius: 10px;
+	color: var(--blue-color);
+	font-family: 'Shrikhand', sans-serif; 
+	font-weight: 400;
+	font-size: 32px;
+	border: var(--blue-color) solid 9px;
+	padding: 10px 40px;
+	width: 60%;
+	text-align: center;
+
+}
+
+
+.gameTeam {
+	height: 50%;
+	/* outline: black 2px dashed; */
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.wcGameBlock {
+	height: 33.3334%;
+}
+.divGameBlock {
+	height: 50%;
+}
+.confGameBlock {
+	height: 100%;
+}
+
+
+.confGameBlock, .wcGameBlock, .divGameBlock, .confGameBlock {
+	padding-bottom: 1px;
+}
+
+.info {
+	display: block;
+	width: 90%;
+	font-size: 50px;
+	color: var(--blue-color);
+	text-align: center;
+	margin: auto;
+}
+.num {
+	color: var(--red-color);
+}
+
+.info span {
+	text-align: center;
+	/* display: block; */
+}
+
+#scoresScores {
+	width: 200px;
+	background-color: var(--gray-color);
+	color: var(--blue-color);
+}
+#scoresScores2 {
+	width: 180px;
+	background-color: var(--gray-color);
+	color: var(--blue-color);
+}
+#home, #away, #mvp {
+	width:160px;
+	height: 140px;
+	background-size: cover;
+	background-position: center;
+}
+#home {
+	background-color: RED;
+}
+#away {
+	background-color: greenyellow;
+}
+#mvp {
+	width:220px;
+	font-size:70px;
+}
+.nameScores {
+	background-color: var(--gray-color);
+	text-align: right;
+}
+.home, .away, .mvp {
+	background-color: rgba(242, 244, 248,1);
+	color: var(--blue-color);
+}
+#gameScore {
+	background-color: var(--gray-color);
+	display: block;
+	width: 100%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.p {
+	text-decoration: underline;
+	width: 100px;
+}
+.tiny {
+	font-size: 22px;
+	line-height: 1em;
+}
+.standings {
+	text-align: left;
+}
+th, tr {
+	font-weight: 400;
+}
+/* FOR SMALL SCREENS */
+@media (max-width:1030px){
+	:root {
+		--full-height: 480px;
+		--half-height: 240px;
+		--fourth-height: 120px;
+		--sixty-height: 288px;
+		--twenty-height: 96px;
+	
+		--col-width: 120px;
+		--double-col-width: 180px;
+	}
+	
+	.headin{
+		font-size: 85px;
+	}
+
+	.ptable table{
+		font-size: 60px;
+		font-weight: 400;
+	}	
+	
+	.predBlock {height: var(--full-height);}
+
+	.predBlock {margin: 100px auto;}
+
+	.roundBlock {
+		width: var(--col-width);
+	}
+	.champBlock {
+		/* background-color: rgb(203, 238, 255); */
+		width: var(--double-col-width);
+	}
+	.nameBlock p, .ptsBlock p{
+		font-size: 38px;
+	}
+
+	input {
+		width: 80%;
+		text-align: center;	
+	}
+	#bot {
+		margin-bottom: 300px;
+	}
+
+	#scoresScores2 {
+		width: 20px;
+		background-color: var(--gray-color);
+		color: var(--blue-color);
+	}
+	.mvp {
+		font-size: 40px;
+	}
+	/* HORIZONTAL SMALL SCREEN */
+    @media (orientation: landscape) {
+        .bar, .bar2 {
+          display: none;
+        }
+      }
+}
