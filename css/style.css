@@ -187,8 +187,8 @@ th, td {
 .tGB {
 	background-image: url(GB.png);
 }
-.tKC {
-	background-image: url(KC.png);
+.tTEN {
+	background-image: url(TEN.png);
 }
 
 .submit {
@@ -196,14 +196,14 @@ th, td {
 	margin-bottom: 50px;
 }
 input {
-	background-color: var(--red-color);
+	background-color: var(--gray-color);
 	border-radius: 10px;
 	color: var(--blue-color);
 	font-family: 'Shrikhand', sans-serif; 
 	font-weight: 400;
-	font-size: 32px;
+	font-size: 45px;
 	border: var(--blue-color) solid 9px;
-	padding: 10px 40px;
+	padding: 1px 40px;
 	width: 60%;
 	text-align: center;
 

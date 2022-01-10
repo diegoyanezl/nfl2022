@@ -21,8 +21,8 @@
 </head>
 
 
-<!-- <body onload="initPicks(); init(); "> -->
-<body onload="init(); ">
+<body onload="initPicks(); init(); ">
+<!-- <body onload="init(); "> -->
 	<div class="bar">
 </div>
 
@@ -37,6 +37,99 @@
 
 
 <div style="height: 110px;"></div>
+
+
+<!-- MAKE PICKS -->
+<div class="predBlock makePredBlock">
+	<div class="roundBlock wcBlock nfc">
+		<div class="wcGameBlock teamBlock g0">
+			<div onclick="pick(0, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(0, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="wcGameBlock teamBlock g1">
+			<div onclick="pick(1, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(1, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="wcGameBlock teamBlock g2">
+			<div onclick="pick(2, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(2, 1)" class="gameTeam t1"></div>
+		</div>
+	</div>
+
+	<div class="roundBlock divBlock nfc">		
+		<div class="divGameBlock teamBlock g6">
+			<div onclick="pick(6, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(6, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="divGameBlock teamBlock g7">
+			<div onclick="pick(7, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(7, 1)" class="gameTeam t1"></div>
+		</div>
+	</div>
+
+	<div class="roundBlock confBlock nfc g10">
+		<div class="confGameBlock teamBlock">
+			<div onclick="pick(10, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(10, 1)" class="gameTeam t1"></div>
+		</div>	
+	</div>
+
+	<div class="roundBlock sbBlock nfc g12">
+		<div onclick="pick(12, 0)" class="teamBlock sbTeam t0"></div>
+	</div>
+
+	<div class="roundBlock champBlock">
+		<div class="teamBlock nameBlock">
+			<p>MAKE</p>
+		</div>
+		<div class="teamBlock champTeam"></div>
+		<div class="teamBlock ptsBlock">
+			<p class="ptsP">PICKS</p>
+		</div>
+	</div>
+
+	<div class="roundBlock sbBlock afc g12">
+		<div onclick="pick(12, 1)" class="teamBlock sbTeam t1"></div>
+	</div>
+
+	<div class="roundBlock confBlock afc g11">	
+		<div class="confGameBlock teamBlock">
+			<div onclick="pick(11, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(11, 1)" class="gameTeam t1"></div>
+		</div>	
+	</div>
+
+	<div class="roundBlock divBlock afc g8">
+		<div class="divGameBlock teamBlock">
+			<div onclick="pick(8, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(8, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="divGameBlock teamBlock g9">
+			<div onclick="pick(9, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(9, 1)" class="gameTeam t1"></div>
+		</div>
+	</div>
+
+	<div class="roundBlock wcBlock afc">
+		<div class="wcGameBlock teamBlock g3">
+			<div onclick="pick(3, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(3, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="wcGameBlock teamBlock g4">
+			<div onclick="pick(4, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(4, 1)" class="gameTeam t1"></div>
+		</div>
+		<div class="wcGameBlock teamBlock g5">
+			<div onclick="pick(5, 0)" class="gameTeam t0"></div>
+			<div onclick="pick(5, 1)" class="gameTeam t1"></div>
+		</div>
+	</div>
+
+	<div class="submit">
+		<input value="PON TU NOMBRE Y MANDAME SCREENSHOT"></input>
+	</div>
+</div>
+<div style="height: 250px;"></div>
 
 
 <!-- STANDINGS -->
@@ -151,100 +244,6 @@
 
 
 
-<div style="height: 50px;"></div>
-
-<!-- MAKE PICKS -->
-<div class="submit">
-	<input value="PON TU NOMBRE Y MANDAME SCREENSHOT"></input>
-</div>
-
-<div class="predBlock makePredBlock">
-	<div class="roundBlock wcBlock nfc">
-		<div class="wcGameBlock teamBlock g0">
-			<div onclick="pick(0, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(0, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="wcGameBlock teamBlock g1">
-			<div onclick="pick(1, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(1, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="wcGameBlock teamBlock g2">
-			<div onclick="pick(2, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(2, 1)" class="gameTeam t1"></div>
-		</div>
-	</div>
-
-	<div class="roundBlock divBlock nfc">		
-		<div class="divGameBlock teamBlock g6">
-			<div onclick="pick(6, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(6, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="divGameBlock teamBlock g7">
-			<div onclick="pick(7, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(7, 1)" class="gameTeam t1"></div>
-		</div>
-	</div>
-
-	<div class="roundBlock confBlock nfc g10">
-		<div class="confGameBlock teamBlock">
-			<div onclick="pick(10, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(10, 1)" class="gameTeam t1"></div>
-		</div>	
-	</div>
-
-	<div class="roundBlock sbBlock nfc g12">
-		<div onclick="pick(12, 0)" class="teamBlock sbTeam t0"></div>
-	</div>
-
-	<div class="roundBlock champBlock">
-		<div class="teamBlock nameBlock">
-			<p>MAKE</p>
-		</div>
-		<div class="teamBlock champTeam"></div>
-		<div class="teamBlock ptsBlock">
-			<p class="ptsP">PICKS</p>
-		</div>
-	</div>
-
-	<div class="roundBlock sbBlock afc g12">
-		<div onclick="pick(12, 1)" class="teamBlock sbTeam t1"></div>
-	</div>
-
-	<div class="roundBlock confBlock afc g11">	
-		<div class="confGameBlock teamBlock">
-			<div onclick="pick(11, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(11, 1)" class="gameTeam t1"></div>
-		</div>	
-	</div>
-
-	<div class="roundBlock divBlock afc g8">
-		<div class="divGameBlock teamBlock">
-			<div onclick="pick(8, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(8, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="divGameBlock teamBlock g9">
-			<div onclick="pick(9, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(9, 1)" class="gameTeam t1"></div>
-		</div>
-	</div>
-
-	<div class="roundBlock wcBlock afc">
-		<div class="wcGameBlock teamBlock g3">
-			<div onclick="pick(3, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(3, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="wcGameBlock teamBlock g4">
-			<div onclick="pick(4, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(4, 1)" class="gameTeam t1"></div>
-		</div>
-		<div class="wcGameBlock teamBlock g5">
-			<div onclick="pick(5, 0)" class="gameTeam t0"></div>
-			<div onclick="pick(5, 1)" class="gameTeam t1"></div>
-		</div>
-	</div>
-	
-</div>
-<div style="height: 200px;"></div>
 
 
 
@@ -282,7 +281,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
@@ -323,7 +322,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
@@ -366,7 +365,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
@@ -407,7 +406,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
@@ -448,7 +447,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
@@ -489,7 +488,7 @@
 		<div class="teamBlock confTeam t3"></div>
 	</div>
 	<div class="roundBlock divBlock afc">
-		<div class="teamBlock divTeam tKC"></div>
+		<div class="teamBlock divTeam tTEN"></div>
 		<div class="teamBlock divTeam t3"></div>
 		<div class="teamBlock divTeam t4"></div>
 		<div class="teamBlock divTeam t5"></div>
