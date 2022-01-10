@@ -60,8 +60,6 @@ function pick(game, team) {
 }
 
 function updateBoardWc() {
-    console.log("...UPDATING WC 'make_picks.js'");
-
     let div_teamsNFC = [];
     let div_teamsAFC = [];
     for (i=0; i<3; i++) { // get winners so far

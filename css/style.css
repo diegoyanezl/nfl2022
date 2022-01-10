@@ -315,8 +315,16 @@ th, tr {
 		--sixty-height: 288px;
 		--twenty-height: 96px;
 	
-		--col-width: 120px;
-		--double-col-width: 180px;
+		--col-width: 8%;
+		--double-col-width: 15%;
+		/* FOR AFTER MAKE PREDS IS DONE */
+		/* --col-width: 120px;
+		--double-col-width: 180px; */
+
+		/* --blue-color: rgb(82, 98, 150);
+		--teal-color: rgb(187, 219, 223);
+		--red-color: rgb(160, 93, 105);
+		--gray-color: rgb(194, 194, 194); */
 	}
 	
 	.headin{
