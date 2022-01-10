@@ -18,8 +18,8 @@ let t12 = 0;
 let picks = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 let bg;
 
-const NFCrankings = ['GB', 'NO', 'SEA', 'WAS', 'TB', 'LAR', 'CHI'];
-const AFCrankings = ['KC', 'BUF', 'PIT', 'TEN', 'BAL', 'CLE', 'IND'];
+const NFCrankings = ['GB', 'TB', 'DAL', 'LAR', 'ARZ', 'SF', 'PHI'];
+const AFCrankings = ['TEN', 'KC', 'BUF', 'CIN', 'LV', 'NE', 'PIT'];
 
 
 let games = [

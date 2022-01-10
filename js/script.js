@@ -1,35 +1,36 @@
-var rounds_so_far = 4; // after wc-1, after div-2, after conf-3, after sb-4, FOR POINT KEEPING
-var ALIVEtms = [ 'TB','KC' ];
+var rounds_so_far = 0; // after wc-1, after div-2, after conf-3, after sb-4, FOR POINT KEEPING
+var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','LV','NE','PIT' ];
 var REAL = [
 	[ // DIVISIONAL TEAMS
-		'LAR', 
-		'NO', 
-		'TB', 
-		'CLE', 
-		'BUF', 
-		'BAL'
+		'TB/PHI', 
+		'DAL/SF',
+		'LAR/ARZ',
+		'KC/PIT',
+		'BUF/NE',
+		'CIN/LV'
 	], 
 	[ // CONFERENCE TEAMS
-		'GB', 
-		'TB', 
-		'KC', 
-		'BUF'
+		'GB/DAL/LAR/ARZ/SF/PHI', 
+		'TB/DAL/LAR/ARZ/SF', 
+		'TEN/BUF/CIN/LV/NE/PIT', 
+		'KC/BUF/CIN/LV/NE/'
 	], 
-	['TB', 'KC'],
-	['TB/KC'] 
+	['/', '/'],
+	['/'] 
 ];
 var REALscores = [
+	[['LV','CIN'], 100, 1000],
+	[['BUF','NE'], 100, 1000],
+	[['TB','PHI'], 100, 1000],
+	[['DAL','SF'], 100, 1000],
+	[['KC','PIT'], 100, 1000],
+	[['LAR','ARZ'], 100, 1000],
+
+	[['GB','/'], 100, 1000],
 	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
+	[['TEN','/'], 100, 1000],
 	[['/','/'], 100, 1000],
 
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
 	[['/','/'], 100, 1000],
 	[['/','/'], 100, 1000],
 
@@ -40,112 +41,112 @@ var REALscores = [
 // SCORE PREDICTIONS
 // [ game(for easier inputing), score dif(+Home win, -Away win), total pts(tiebreaker) ]
 var scores_andres = [
-	['BUF/IND', 10, 0],
-	['SEA/LAR', 3, 57],
-	['WAS/TB', -6, 40],
-	['TEN/BAL', 11, 53],
-	['NO/CHI', 18, 46],
-	['PIT/CLE', 3, 53],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 14, 50],
-	['BUF/BAL', 11, 59],
-	['KC/CLE', 100, 1000],
-	['NO/TB', 10, 44],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 7, 41],
-	['KC/BUF', -7, 55],
-
-	['TB/KC', -8,56, "Mathieu"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 var scores_ap = [
-	['BUF/IND', 12, 0],
-	['SEA/LAR', 100, 1000],
-	['WAS/TB', 6, 36],
-	['TEN/BAL', 100, 1000],
-	['NO/CHI', 100, 1000],
-	['PIT/CLE', 100, 1000],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 100, 1000],
-	['BUF/BAL', 100, 1000],
-	['KC/CLE', 100, 1000],
-	['NO/TB', 100, 1000],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 100, 1000],
-	['KC/BUF', 100, 1000],
-
-	['TB/KC',100 , 1000, "--"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 var scores_fabian = [
-	['BUF/IND', 10, 0],
-	['SEA/LAR', 11, 37],
-	['WAS/TB', -14, 48],
-	['TEN/BAL', -7, 61],
-	['NO/CHI', 7, 47],
-	['PIT/CLE', 3, 43],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 13, 55],
-	['BUF/BAL', 3, 51],
-	['KC/CLE', 3, 57],
-	['NO/TB', 3, 57],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 3, 65],
-	['KC/BUF', 7, 53],
-
-	['TB/KC', 4, 64, "Evans"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 var scores_diego = [
-	['BUF/IND', 13, 0],
-	['SEA/LAR', 4, 27],
-	['WAS/TB', -10, 50],
-	['TEN/BAL', 4, 50],
-	['NO/CHI', 17, 38],
-	['PIT/CLE', -4, 40],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 10, 54],
-	['BUF/BAL', -4, 64],
-	['KC/CLE', 7, 61],
-	['NO/TB', 5, 53],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 9, 65],
-	['KC/BUF', 4, 54],
-
-	['TB/KC', -4, 58, "Kelce"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 var scores_mami = [
-	['BUF/IND', 20, 0],
-	['SEA/LAR', 16, 44],
-	['WAS/TB', 23, 47],
-	['TEN/BAL', 100, 1000],
-	[['NO','CHI'], 26, 50],
-	[['PIT','CLE'], 8, 50],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 100, 1000],
-	['BUF/BAL', -15, 15],
-	['KC/CLE', 17, 53 ],
-	['NO/TB', 15, 41],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 17, 59],
-	['KC/BUF', 14, 42],
-
-	['TB/KC', -7, 61, "Hill"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 var scores_papi = [
-	['BUF/IND', 14, 68],
-	['SEA/LAR', 11, 57],
-	['WAS/TB', -10, 56],
-	['TEN/BAL', -6, 54],
-	['NO/CHI', 15, 53],
-	['PIT/CLE', -7, 63],
+	['LV/CIN', 100, 1000],
+	['BUF/NE', 100, 1000],
+	['TB/PHI', 100, 1000],
+	['DAL/SF', 100, 1000],
+	['KC/PIT', 100, 1000],
+	['LAR/ARZ', 100, 1000],
 
-	['GB/LAR', 10, 64],
-	['BUF/BAL', 4, 58],
-	['KC/CLE', 7, 57],
-	['NO/TB', 4, 60],
+	['GB/', 100, 1000],
+	['/', 100, 1000],
+	['KC/', 100, 1000],
+	['/', 100, 1000],
 
-	['GB/TB', 7, 61],
-	['KC/BUF', -3, 51],
-
-	['TB/KC', -8, 78, "Hill"]
+	['/', 100, 1000],
+	['/', 100, 1000],
+	
+	['/', 100, 1000, ""],
 ];
 
 console.log('VERSION: '+rounds_so_far+' --314');
@@ -178,40 +179,40 @@ const num_players = 6;
 
 // TEAM PREDICTIONS
 var preds_papi = [
-	['TB', 'NO', 'SEA', 'CLE', 'BUF', 'BAL'], // DIVISIONAL
-	['GB', 'NO', 'KC', 'BUF'], // CONFERENCE
-	['GB', 'BUF'], // SUPER BOWL
-	['BUF'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 var preds_ap = [
-	['TB', 'NO', 'SEA', 'CLE', 'BUF', 'TEN'], // DIVISIONAL
-	['GB', 'SEA', 'KC', 'BUF'], // CONFERENCE
-	['SEA', 'KC'], // SUPER BOWL
-	['SEA'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 var preds_mami = [
-	['WAS', 'NO', 'LAR', 'IND', 'PIT', 'BAL'], // DIVISIONAL
-	['GB', 'NO', 'KC', 'PIT'], // CONFERENCE
-	['NO', 'KC'], // SUPER BOWL
-	['NO'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 var preds_diego = [
-	['TB', 'NO', 'SEA', 'CLE', 'BUF', 'BAL'], // DIVISIONAL
-	['GB', 'NO', 'KC', 'BUF'], // CONFERENCE
-	['NO', 'KC'], // SUPER BOWL
-	['NO'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 var preds_fabian = [
-	['TB', 'NO', 'SEA', 'BAL', 'BUF', 'PIT'], // DIVISIONAL
-	['GB', 'NO', 'KC', 'BUF'], // CONFERENCE
-	['GB', 'BUF'], // SUPER BOWL
-	['BUF'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 var preds_andres = [
-	['TB', 'NO', 'SEA', 'CLE', 'BUF', 'TEN'], // DIVISIONAL
-	['GB', 'SEA', 'KC', 'BUF'], // CONFERENCE
-	['SEA', 'KC'], // SUPER BOWL
-	['SEA'] // WINNER
+	['', '', '', '', '', ''], // DIVISIONAL
+	['', '', '', ''], // CONFERENCE
+	['', ''], // SUPER BOWL
+	[''] // WINNER
 ];
 
 // var = ["Name", preds_name, Pts, TeamWins, ScoreWins, scores_name];
