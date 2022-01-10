@@ -209,7 +209,23 @@ input {
 
 }
 
+#sheets {
+	background-color: var(--blue-color);
+	border-radius: 10px;
+	color: var(--teal-color);
+	font-family: 'Shrikhand', sans-serif; 
+	font-weight: 200;
+	text-decoration: none;
+	font-size: 55px;
+	/* border: var(--red-color) solid 9px; */
+	padding: 8px 50px;
+	/* width: 60%; */
+	text-align: center;
+}
+#sheets:hover {
+	color: var(--red-color);
 
+}
 .gameTeam {
 	height: 50%;
 	/* outline: black 2px dashed; */
