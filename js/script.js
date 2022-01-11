@@ -1,27 +1,5 @@
-var rounds_so_far = 0; // after wc-1, after div-2, after conf-3, after sb-4, FOR POINT KEEPING
-var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','LV','NE','PIT' ];
-var REAL = [
-	[ // DIVISIONAL TEAMS
-		'TB/PHI',
-		'DAL/SF',
-		'LAR/ARZ',
-		'KC/PIT',
-		'BUF/NE',
-		'CIN/LV'
-	],
-	[ // CONFERENCE TEAMS
-		'GB/DAL/LAR/ARZ/SF/PHI',
-		'TB/DAL/LAR/ARZ/SF',
-		'TEN/BUF/CIN/LV/NE/PIT',
-		'KC/BUF/CIN/LV/NE/'
-	], 
-	['/', '/'],
-	['/'] 
-];
 
-
-
-console.log('VERSION: '+rounds_so_far+' --314');
+console.log('VERSION: '+rounds_so_far);
 
 
 window.onbeforeunload = function () {
@@ -353,10 +331,10 @@ function scorePoints() {
 }
 
 function superBowlPoints() {
-	console.log("RUNNING sb POINTS");
+	// console.log("RUNNING sb POINTS");
 	let i = 12;
 	let game = REALscores[i];
-	console.log("is this super bowl?" +game);
+	// console.log("is this super bowl?" +game);
 	let realDif = game[1] - game[2];
 	let realTot = game[1] + game[2];
 	let realWinnerScore;
@@ -444,7 +422,7 @@ function superBowlPoints() {
 			}
 		}
 	}
-	console.log("all points sb");
+	// console.log("all points sb");
 	let playersList = [andres, ap, fabian, diego, mami, papi];
 	for (j=0; j < playersList.length; j++) {
 		let pDif = playersList[j][5][i][1];
@@ -457,7 +435,7 @@ function superBowlPoints() {
 		
 		let correct_mvp = game[3];
 		let p_mvp = playersList[j][5][i][3];
-		console.log("MVP:" +correct_mvp);
+		// console.log("MVP:" +correct_mvp);
 		if (correct_mvp == p_mvp) {
 			playersList[j][2] += superBowlMvpPts;
 		}
@@ -475,7 +453,6 @@ function showScorePreds() {
 			game_id = 12;
 		} else if (realTot == 0) { // find next unfinished game
 			game_id = i;
-			console.log("breaking: "+i);
 			break
 		}
 	}
