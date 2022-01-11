@@ -2,152 +2,24 @@ var rounds_so_far = 0; // after wc-1, after div-2, after conf-3, after sb-4, FOR
 var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','LV','NE','PIT' ];
 var REAL = [
 	[ // DIVISIONAL TEAMS
-		'TB/PHI', 
+		'TB/PHI',
 		'DAL/SF',
 		'LAR/ARZ',
 		'KC/PIT',
 		'BUF/NE',
 		'CIN/LV'
-	], 
+	],
 	[ // CONFERENCE TEAMS
-		'GB/DAL/LAR/ARZ/SF/PHI', 
-		'TB/DAL/LAR/ARZ/SF', 
-		'TEN/BUF/CIN/LV/NE/PIT', 
+		'GB/DAL/LAR/ARZ/SF/PHI',
+		'TB/DAL/LAR/ARZ/SF',
+		'TEN/BUF/CIN/LV/NE/PIT',
 		'KC/BUF/CIN/LV/NE/'
 	], 
 	['/', '/'],
 	['/'] 
 ];
-var REALscores = [
-	[['LV','CIN'], 100, 1000],
-	[['BUF','NE'], 100, 1000],
-	[['TB','PHI'], 100, 1000],
-	[['DAL','SF'], 100, 1000],
-	[['KC','PIT'], 100, 1000],
-	[['LAR','ARZ'], 100, 1000],
-
-	[['GB','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-	[['TEN','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-
-	[['/','/'], 100, 1000],
-	[['/','/'], 100, 1000],
-
-	[['/','/'], 100, 1000, ""]
-];
 
 
-// SCORE PREDICTIONS
-// [ game(for easier inputing), score dif(+Home win, -Away win), total pts(tiebreaker) ]
-var scores_andres = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
-var scores_ap = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
-var scores_fabian = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
-var scores_diego = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
-var scores_mami = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
-var scores_papi = [
-	['LV/CIN', 100, 1000],
-	['BUF/NE', 100, 1000],
-	['TB/PHI', 100, 1000],
-	['DAL/SF', 100, 1000],
-	['KC/PIT', 100, 1000],
-	['LAR/ARZ', 100, 1000],
-
-	['GB/', 100, 1000],
-	['/', 100, 1000],
-	['TEN/', 100, 1000],
-	['/', 100, 1000],
-
-	['/', 100, 1000],
-	['/', 100, 1000],
-	
-	['/', 100, 1000, ""],
-];
 
 console.log('VERSION: '+rounds_so_far+' --314');
 
@@ -173,8 +45,6 @@ const superBowlClosestPts = 3;
 const superBowlMvpPts = 1;
 const PLAYERS = [andres, ap, fabian, diego, mami, papi];
 const num_players = 6;
-
-
 
 
 // TEAM PREDICTIONS
@@ -291,8 +161,6 @@ function makeBlocksIntro() {
 		let p_winners = playersList[j][1];
 		let plyr = playersList[j][0];
 		let bg;
-
-
 
 		let tms = p_winners[0]; // DIVISIONAL
 		let REALtms = REAL[0];

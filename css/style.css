@@ -282,10 +282,10 @@ input {
 	background-position: center;
 }
 #home {
-	background-color: RED;
+	background-color: rgb(152, 152, 152);
 }
 #away {
-	background-color: greenyellow;
+	background-color: rgb(152, 152, 152);
 }
 #mvp {
 	width:220px;
