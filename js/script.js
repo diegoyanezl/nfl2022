@@ -61,28 +61,28 @@ var preds_ap = [
 	[''] // WINNER
 ];
 var preds_mami = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['PHI', 'DAL', 'ARZ', 'KC', 'BUF', 'LV'], // DIVISIONAL
+	['DAL', 'PHI', 'KC', 'LV'], // CONFERENCE
+	['DAL', 'KC'], // SUPER BOWL
+	['DAL'] // WINNER
 ];
 var preds_diego = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['TB', 'DAL', 'ARZ', 'KC', 'BUF', 'CIN'], // DIVISIONAL
+	['GB', 'DAL', 'KC', 'CIN'], // CONFERENCE
+	['GB', 'KC'], // SUPER BOWL
+	['GB'] // WINNER
 ];
 var preds_fabian = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['PHI', 'DAL', 'LAR', 'KC', 'BUF', 'CIN'], // DIVISIONAL
+	['GB', 'DAL', 'KC', 'CIN'], // CONFERENCE
+	['GB', 'KC'], // SUPER BOWL
+	['GB'] // WINNER
 ];
 var preds_andres = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['TB', 'SF', 'ARZ', 'KC', 'NE', 'CIN'], // DIVISIONAL
+	['GB', 'ARZ', 'CIN', 'NE'], // CONFERENCE
+	['GB', 'CIN'], // SUPER BOWL
+	['GB'] // WINNER
 ];
 
 // var = ["Name", preds_name, Pts, TeamWins, ScoreWins, scores_name];
