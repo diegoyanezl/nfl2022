@@ -96,7 +96,8 @@ function rank() {
 }
 
 function points () {
-
+	
+	console.log(" pred points ");
 	for (i=0; i < rounds_so_far; i++) {
 		// loop thru every round
 		
