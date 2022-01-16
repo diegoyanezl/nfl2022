@@ -1,21 +1,21 @@
 const csv = '25,21,14,17,30,15,25,27,28,10,21,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,37,27,36,40,30,35,26,38,17,29,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,27,20,34,20,20,23,34,27,38,20,24,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,28,20,16,9,20,16,31,27,38,17,20,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,38,19,21,26,35,25,22,42,15,18,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,24,31,20,17,34,17,29,24,42,24,30,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,mvp,mvp,mvp,mvp,mvp,mvp';
 
 var rounds_so_far = 1; // def=1,after wc-2, after div-3, after conf-4, after sb-5, FOR POINT KEEPING
-var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','NE','PIT' ];
+var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','PIT' ];
 var REAL = [
 	[ // DIVISIONAL TEAMS
 		'TB/PHI',
 		'DAL/SF',
 		'LAR/ARZ',
 		'KC/PIT',
-		'BUF/NE',
+		'BUF',
 		'CIN'
 	],
 	[ // CONFERENCE TEAMS
 		'GB/DAL/LAR/ARZ/SF/PHI',
 		'TB/DAL/LAR/ARZ/SF',
-		'TEN/BUF/CIN/NE/PIT',
-		'KC/BUF/CIN/NE/'
+		'TEN/CIN/PIT',
+		'BUF/KC/PIT/CIN'
 	], 
 	['/', '/'],
 	['/'] // uncomment superBowlPoints in script.js
