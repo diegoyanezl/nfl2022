@@ -206,7 +206,7 @@ function setInfo() {
 function scorePoints() {
 	// console.log(" ");
 	// console.log("_______ ");
-	console.log("RUNNING SCORE POINTS");
+	// console.log("RUNNING SCORE POINTS");
 	// console.log("--------- ");
 	// console.log(" ");
 	var num_games = REALscores.length;
@@ -226,10 +226,12 @@ function scorePoints() {
 		// console.log(" ");
 		// console.log("_______ ");
 		// console.log("CHECKING GAME "+i);
+		let playersList = [andres, ap, fabian, diego, mami, papi];
 		if (realTot != 0) { // only check finished games
+			// console.log(" ");
 			// console.log("continuing GAME "+i);
 			// console.log("REALdIF "+realDif);
-			
+
 			let playersList = [andres, ap, fabian, diego, mami, papi];
 			// console.log("1==pl  "+playersList);
 			let difWinners = [];
@@ -318,7 +320,7 @@ function scorePoints() {
 
 			for (j=0; j < playersList.length; j++) { //award the players pts
 				if (difWinnersUntied2.includes(playersList[j])) {
-					// console.log("awarding player: "+playersList[j]);
+					// console.log("awarding player: "+playersList[j][0]);
 					playersList[j][2] += 1;
 					playersList[j][4] += 1;	
 				}
@@ -327,7 +329,7 @@ function scorePoints() {
 		}
 
 	}
-	superBowlPoints();
+	// superBowlPoints();
 }
 
 function superBowlPoints() {

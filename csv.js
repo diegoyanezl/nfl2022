@@ -18,7 +18,7 @@ var REAL = [
 		'KC/BUF/CIN/NE/'
 	], 
 	['/', '/'],
-	['/'] 
+	['/'] // uncomment superBowlPoints in script.js
 ];
 var REALscores = [
 	[['CIN','LV'], 26, 19],
