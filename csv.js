@@ -1,7 +1,7 @@
 const csv = '21,25,14,17,30,15,25,27,28,10,21,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,37,26,27,36,40,30,35,26,38,17,29,35,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,27,34,20,20,23,34,27,38,20,24,20,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,28,16,9,20,16,31,27,38,17,20,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,38,19,19,21,26,35,25,22,42,15,18,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,31,24,20,17,34,17,29,24,42,24,30,27,0,0,0,0,0,0,0,0,0,0,0,0,0,0,mvp,mvp,mvp,mvp,mvp,mvp';
 
 var rounds_so_far = 0; // after wc-1, after div-2, after conf-3, after sb-4, FOR POINT KEEPING
-var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','LV','NE','PIT' ];
+var ALIVEtms = [ 'GB','TB','DAL','LAR','ARZ','SF','PHI','TEN','KC','BUF','CIN','NE','PIT' ];
 var REAL = [
 	[ // DIVISIONAL TEAMS
 		'TB/PHI',
@@ -9,19 +9,19 @@ var REAL = [
 		'LAR/ARZ',
 		'KC/PIT',
 		'BUF/NE',
-		'CIN/LV'
+		'CIN'
 	],
 	[ // CONFERENCE TEAMS
 		'GB/DAL/LAR/ARZ/SF/PHI',
 		'TB/DAL/LAR/ARZ/SF',
-		'TEN/BUF/CIN/LV/NE/PIT',
-		'KC/BUF/CIN/LV/NE/'
+		'TEN/BUF/CIN/NE/PIT',
+		'KC/BUF/CIN/NE/'
 	], 
 	['/', '/'],
 	['/'] 
 ];
 var REALscores = [
-	[['LV','CIN'], 0, 0],
+	[['LV','CIN'], 7, 45],
 	[['BUF','NE'], 0, 0],
 	[['TB','PHI'], 0, 0],
 	[['DAL','SF'], 0, 0],
