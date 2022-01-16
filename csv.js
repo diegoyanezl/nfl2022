@@ -15,7 +15,7 @@ var REAL = [
 		'GB/DAL/LAR/ARZ/SF/PHI',
 		'TB/DAL/LAR/ARZ/SF',
 		'TEN/CIN/PIT',
-		'BUF/KC/PIT/CIN'
+		'KC/BUF/CIN'
 	], 
 	['/', '/'],
 	['/'] // uncomment superBowlPoints in script.js

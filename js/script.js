@@ -27,16 +27,16 @@ const num_players = 6;
 
 // TEAM PREDICTIONS
 var preds_papi = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['TB', 'DAL', 'LAR', 'KC', 'BUF', 'LV'], // DIVISIONAL
+	['GB', 'DAL', 'TEN', 'KC'], // CONFERENCE
+	['GB', 'KC'], // SUPER BOWL
+	['GB'] // WINNER
 ];
 var preds_ap = [
-	['', '', '', '', '', ''], // DIVISIONAL
-	['', '', '', ''], // CONFERENCE
-	['', ''], // SUPER BOWL
-	[''] // WINNER
+	['TB', 'DAL', 'ARZ', 'KC', 'NE', 'CIN'], // DIVISIONAL
+	['TB', 'ARZ', 'TEN', 'KC'], // CONFERENCE
+	['TB', 'KC'], // SUPER BOWL
+	['KC'] // WINNER
 ];
 var preds_mami = [
 	['PHI', 'DAL', 'ARZ', 'KC', 'BUF', 'LV'], // DIVISIONAL
