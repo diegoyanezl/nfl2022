@@ -22,7 +22,7 @@ var REAL = [
 ];
 var REALscores = [
 	[['CIN','LV'], 26, 19],
-	[['BUF','NE'], 0, 0],
+	[['BUF','NE'], 47, 17],
 	[['TB','PHI'], 0, 0],
 	[['DAL','SF'], 0, 0],
 	[['KC','PIT'], 0, 0],
