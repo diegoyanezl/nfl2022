@@ -30,6 +30,12 @@ body, html {
     margin: 0;
     /* background-color: var(--blue-color); */
 }
+.basicBlock {
+	margin: 80px auto;
+	display: block;
+	text-align: center;
+	
+}
 
 
 
