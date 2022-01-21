@@ -27,7 +27,7 @@ const num_players = 6;
 
 // TEAM PREDICTIONS
 var preds_papi = [
-	['TB', 'DAL', 'LAR', 'KC', 'BUF', 'LV'], // DIVISIONAL
+	['LAR', 'TB', 'DAL', 'LV', 'KC', 'BUF'], // DIVISIONAL
 	['GB', 'DAL', 'TEN', 'KC'], // CONFERENCE
 	['GB', 'KC'], // SUPER BOWL
 	['GB'] // WINNER
@@ -39,26 +39,26 @@ var preds_ap = [
 	['KC'] // WINNER
 ];
 var preds_mami = [
-	['PHI', 'DAL', 'ARZ', 'KC', 'BUF', 'LV'], // DIVISIONAL
-	['DAL', 'PHI', 'KC', 'LV'], // CONFERENCE
+	['PHI', 'DAL', 'ARZ', 'LV', 'KC', 'BUF'], // DIVISIONAL
+	['PHI', 'DAL', 'LV', 'KC'], // CONFERENCE
 	['DAL', 'KC'], // SUPER BOWL
 	['DAL'] // WINNER
 ];
 var preds_diego = [
-	['TB', 'DAL', 'ARZ', 'KC', 'BUF', 'CIN'], // DIVISIONAL
-	['GB', 'DAL', 'KC', 'CIN'], // CONFERENCE
+	['ARZ', 'TB', 'DAL', 'CIN', 'KC', 'BUF'], // DIVISIONAL
+	['GB', 'DAL', 'CIN', 'KC'], // CONFERENCE
 	['GB', 'KC'], // SUPER BOWL
 	['GB'] // WINNER
 ];
 var preds_fabian = [
-	['PHI', 'DAL', 'LAR', 'KC', 'BUF', 'CIN'], // DIVISIONAL
-	['GB', 'DAL', 'KC', 'CIN'], // CONFERENCE
+	['PHI', 'DAL', 'LAR', 'CIN', 'KC', 'BUF'], // DIVISIONAL
+	['GB', 'DAL', 'CIN', 'KC'], // CONFERENCE
 	['GB', 'KC'], // SUPER BOWL
 	['GB'] // WINNER
 ];
 var preds_andres = [
-	['TB', 'SF', 'ARZ', 'KC', 'NE', 'CIN'], // DIVISIONAL
-	['GB', 'ARZ', 'CIN', 'NE'], // CONFERENCE
+	['SF', 'TB', 'ARZ', 'NE', 'KC', 'CIN'], // DIVISIONAL
+	['GB', 'ARZ', 'NE', 'CIN'], // CONFERENCE
 	['GB', 'CIN'], // SUPER BOWL
 	['GB'] // WINNER
 ];
