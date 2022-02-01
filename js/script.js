@@ -328,7 +328,7 @@ function scorePoints() {
 		}
 
 	}
-	// superBowlPoints();
+	superBowlPoints();
 }
 
 function superBowlPoints() {
