@@ -328,7 +328,9 @@ function scorePoints() {
 		}
 
 	}
-	superBowlPoints();
+	if (superBowlDone == true) {
+		superBowlPoints();
+	}
 }
 
 function superBowlPoints() {
@@ -472,6 +474,8 @@ function showScorePreds() {
 		let dif = playersList[i][5][game_id][1];
 		let tot = playersList[i][5][game_id][2];
 		let mvp = playersList[i][5][game_id][3];
+		console.log("list: "+playersList[i][5][game_id]);
+
 
 		// console.log(" ");
 		// console.log("dif: "+dif);

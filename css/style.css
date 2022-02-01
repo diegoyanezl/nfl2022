@@ -296,6 +296,8 @@ input {
 #mvp {
 	width:220px;
 	font-size:70px;
+	background-color: white;
+	color: var(--blue-color);
 }
 .nameScores {
 	background-color: var(--gray-color);
